@@ -3,8 +3,8 @@
 * Main app and API are implemented as two apps within **one Django project** for the sake of simplicity.
 * Everywhere I use **local-memory caching** for the sake of simplicity.
 * I don't care about Python 2.x compatibility.
-* Line width (right margin) is larger than 79 characters.
-* Images are proxified through API just to enable caching.
+* Line width (right margin) is not strictly limited.
+* Images are proxified through API just to enable caching and/or ability to replace the source.
 
 ### Questions to clarify
 
