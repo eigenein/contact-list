@@ -1,6 +1,5 @@
 import csv
 import io
-import typing
 
 # Allowed field names.
 FIELD_NAMES = {'firstname', 'lastname', 'street', 'zip', 'city', 'image'}
