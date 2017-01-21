@@ -12,3 +12,5 @@
 * CSV file size **is not checked**.
 * Image file size **is not checked**.
 * Tests are **missing**.
+
+![docs/screenshot.png](Screenshot)
