@@ -1,14 +1,44 @@
 {% load static %}
 <html lang="en">
 <head>
-    <title>Contact List</title>
+  <title>Contact List</title>
 
-    <link rel="shortcut icon" type="image/png" href="{% static "app/favicon.ico" %}"/>
-    <link rel="icon" type="image/png" href="{% static "app/favicon-32x32.png" %}" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="{% static "app/favicon-16x16.png" %}" sizes="16x16"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css"/>
+  <link rel="shortcut icon" type="image/png" href="{% static "app/favicon.ico" %}"/>
+  <link rel="icon" type="image/png" href="{% static "app/favicon-32x32.png" %}" sizes="32x32"/>
+  <link rel="icon" type="image/png" href="{% static "app/favicon-16x16.png" %}" sizes="16x16"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
+  <nav class="nav has-shadow">
+    <div class="nav-left">
+      <a class="nav-item">
+        <img src="{% static "app/favicon-32x32.png" %}" alt="Contact list logo">
+      </a>
+    </div>
+  </nav>
 
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Contacts</h1>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Contact List</strong> by <a href="http://eigenein.me">Pavel Perestoronin</a>.
+          Built with <a href="http://bulma.io">Bulma</a>.
+          Icons by <a href="http://fontawesome.io">Font Awesome</a>.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/eigenein/contact-list">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
