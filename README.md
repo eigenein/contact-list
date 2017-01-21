@@ -1,6 +1,6 @@
 ### Notes
 
-* Main app and API are implemented as two apps within **one Django project** for the sake of simplicity.
+* Main app and API are implemented as two apps (`app` and `api`) within **one Django project** for the sake of simplicity.
 * Everywhere I use **local-memory caching** for the sake of simplicity.
 * I don't care about Python 2.x compatibility.
 * Line width (right margin) is not strictly limited.
