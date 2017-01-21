@@ -121,3 +121,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+APPEND_SLASH = False
+
+
+# Custom project-specific settings.
+
+API_URL = "http://localhost:8000/api"
+CONTACT_LIST_URL = 'https://docs.google.com/spreadsheets/d/1A77-RWx7x8PK2uDm_1XlXyCy2ID9-9lhwix8wPDd5X0/pub?gid=0&single=true&output=csv'
+REQUEST_TIMEOUT = 10
