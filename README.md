@@ -1,11 +1,11 @@
-### Notes and assumptions
+### Notes and assumptions to make it simple
 
-* Main app and API are implemented as two apps (`app` and `api`) within **one Django project**.
-* I didn't implement paging.
-* Everywhere I use **local-memory caching**.
-* I don't care about Python 2.x compatibility.
-* Line width (right margin) is not strictly limited.
-* Images are proxified through API just to enable caching and/or ability to replace the source.
+* Main app (`app`) and API (`api`) are implemented as two apps within one Django project.
+* I didn't implement contacts paging.
+* Everywhere I use built-in local-memory caching.
+* I didn't care about Python 2.x compatibility.
+* Images are proxified through API to enable caching and/or ability to replace the source.
+* Requests to external sources and API are made directly from request handlers.
 
 ### Questions to clarify
 
