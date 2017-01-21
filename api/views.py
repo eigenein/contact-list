@@ -1,4 +1,5 @@
 import csv
+import logging
 
 from http import HTTPStatus
 
@@ -6,7 +7,6 @@ import requests
 import requests.exceptions
 
 from django.conf import settings
-from django.core.cache import cache
 from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.views.decorators.cache import cache_page
 
@@ -21,12 +21,14 @@ def contacts(request: HttpRequest):
         contact_list = list(parse_contacts_csv(response.text))
     except requests.exceptions.RequestException:
         # HTTP request failed. Report unavailability.
+        logging.warning('Failed to fetch CSV.', exc_info=True)
         return HttpResponse(
             status=HTTPStatus.SERVICE_UNAVAILABLE,
             content='Data source is not available.',
         )
     except (csv.Error, ValueError) as ex:
         # Failed to process CSV.
+        logging.warning('Failed to process CSV.', exc_info=True)
         return HttpResponse(
             status=HTTPStatus.SERVICE_UNAVAILABLE,
             content='Source is broken: %s' % ex,

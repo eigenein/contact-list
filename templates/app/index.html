@@ -21,6 +21,41 @@
   <section class="section">
     <div class="container">
       <h1 class="title">Contacts</h1>
+
+      {% if contact_list is not None %}
+        {% for contact in contact_list %}
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-64x64">
+                <img src="http://bulma.io/images/placeholders/128x128.png">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  {% if contact.firstname or contact.lastname %}
+                    <strong>{{ contact.firstname }} {{ contact.lastname }}</strong>
+                  {% else %}
+                    <span class="tag is-danger">No name provided</span>
+                  {% endif %}
+                </p>
+                  {% if contact.street or contact.zip or contact.city %}
+                    <address>
+                      {% if contact.street %}{{ contact.street }}<br>{% endif %}
+                      {{ contact.zip }} {{ contact.city }}
+                    </address>
+                  {% else %}
+                    <span class="tag is-danger">No address provided</span>
+                  {% endif %}
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      {% else %}
+        <div class="notification is-danger">
+          Contact list is not available.
+        </div>
+      {% endif %}
     </div>
   </section>
 

@@ -130,4 +130,4 @@ APPEND_SLASH = False
 
 API_URL = "http://localhost:8000/api"
 CONTACT_LIST_URL = 'https://docs.google.com/spreadsheets/d/1A77-RWx7x8PK2uDm_1XlXyCy2ID9-9lhwix8wPDd5X0/pub?gid=0&single=true&output=csv'
-REQUEST_TIMEOUT = 10
+REQUEST_TIMEOUT = 5
