@@ -13,4 +13,4 @@
 * Image file size **is not checked**.
 * Tests are **missing**.
 
-![docs/screenshot.png](Screenshot)
+![Screenshot](docs/screenshot.png)
