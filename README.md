@@ -9,6 +9,7 @@
 
 ### Questions to clarify
 
+* **No** authentication (is it needed?).
 * `setup.py` and other deployment things are **missing**.
 * CSV file size **is not checked**.
 * Image file size **is not checked**.
