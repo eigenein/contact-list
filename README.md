@@ -1,5 +1,6 @@
 ### Notes and assumptions to make it simple
 
+* I didn't have any Django experience before (just FYI).
 * Main app (`app`) and API (`api`) are implemented as two apps within one Django project.
 * I didn't implement contacts paging.
 * Everywhere I use built-in local-memory caching.
